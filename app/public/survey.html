@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Survey Page</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom styles for this template -->
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="/">Friend Finder</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/api/friends">Friends List</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('img/surveyHeader.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="page-heading">
+                        <h1>Friend Survey</h1>
+                        <span class="subheading">...to find a new friend!</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Survey -->
+    <div class="container">
+        <form role="form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name">
+            </div>
+            <div class="form-group">
+                <label for="photo">Photo</label>
+                <input type="url" class="form-control" id="photo" pattern="https?://.+">
+            </div>
+            <div class="form-group">
+                <label for="q1">I love food.</label>
+                <select data-placeholder=" " class="form-control validate" id="q1">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="q2">I enjoy watching Kdramas.</label>
+                <select data-placeholder=" " class="form-control validate" id="q2">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="q3">I enjoy going on adventures.</label>
+                <select data-placeholder=" " class="form-control validate" id="q3">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="q4">I love watching movies.</label>
+                <select data-placeholder=" " class="form-control validate" id="q4">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="q5">I like Rock music.</label>
+                <select data-placeholder=" " class="form-control validate" id="q5">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="q6">I like Rap.</label>
+                <select data-placeholder=" " class="form-control validate" id="q6">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="q7">I love videogames.</label>
+                <select data-placeholder=" " class="form-control validate" id="q7">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="q8">I am sociable. </label>
+                <select data-placeholder=" " class="form-control validate" id="q8">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="q9">I like Escape Rooms.</label>
+                <select data-placeholder=" " class="form-control validate" id="q9">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="q10">Booga Booga Mooga Mooga Yeah Yeah!</label>
+                <select data-placeholder=" " class="form-control validate" id="q10">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <!-- Submit Button -->
+            <a href="/">
+                <button type="submit" class="btn submit" id="submit">
+                    </i>Submit</button>
+            </a>
+        </form>
+    </div>
+    <hr>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item">
+                            <a href="#">
+                      <span class="fa-stack fa-lg">
+                        <i class="fa fa-twitter fa-stack-1x"></i>
+                      </span>
+                    </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                      <span class="fa-stack fa-lg">
+                        <i class="fa fa-github fa-stack-1x"></i>
+                      </span>
+                    </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; Gen 2017</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Modal -->
+    <div id="resultsModal" class="modal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="modal-title"><strong>Below Is Your New Friend</strong></h2>
+                </div>
+                <div class="modal-body">
+                    <h2 id="userName"></h2>
+                    <img id="userPhoto" src="" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="js/nav.js"></script>
+</body>
+
+<!-- Survey Javascript -->
+<script type="text/javascript ">
+$('.submit').on("click ", function() {
+
+    function validate() {
+        var valid = true;
+
+        var name = $('#name').val();
+        if (name === '') {
+            valid = false;
+        }
+
+        var regexp = /(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/;
+
+        var photoUrl = $('#photo').val();
+        if ((!regexp.test(photoUrl))) {
+            valid = false;
+        }
+
+        $('.validate').each(function() {
+            if ($(this).val() === "") {
+                valid = false;
+            }
+        });
+        return valid;
+    }
+    if (validate() === true) {
+
+        var array = [];
+        for (var i = 1; i <= 10; i++) {
+            console.log("#q" + i);
+            array.push($("#q" + i).val().trim());
+        }
+
+        var newFriend = {
+            name: $('#name').val(),
+            photo: $('#photo').val(),
+            scores: array
+        }
+        $.post("/api/friends ", newFriend, function(data) {
+
+            $("#userName ").text(data.name);
+            $('#userPhoto').attr("src", data.photo);
+            $("#resultsModal ").modal('toggle');
+
+        });
+    } else {
+        alert("Please check survey fields.");
+    }
+    return false;
+});
+</script>
+
+</html>

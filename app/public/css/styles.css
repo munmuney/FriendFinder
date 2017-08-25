@@ -1,0 +1,210 @@
+
+@import url('https://fonts.googleapis.com/css?family=Averia+Sans+Libre|Megrim|Open+Sans');
+
+
+body {
+  font-size: 20px;
+  color: #333333;
+  font-family: 'Averia Sans Libre'}
+
+p {
+  line-height: 1.5;
+  margin: 30px 0; }
+  p a {
+    text-decoration: underline; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800;
+  font-family: 'Megrim' }
+
+
+
+#mainNav {
+  position: absolute;
+  border-bottom: 1px solid #eeeeee;
+  background-color: white;
+  font-family: 'Averia Sans Libre', 'Open Sans' }
+  #mainNav .navbar-brand {
+    font-weight: 800;
+    color: #777777; }
+  #mainNav .navbar-toggler {
+    font-size: 12px;
+    font-weight: 800;
+    padding: 13px;
+    text-transform: uppercase;
+    color: #777777; }
+  #mainNav .navbar-nav > li.nav-item > a {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase; }
+  @media only screen and (min-width: 992px) {
+    #mainNav {
+      border-bottom: 1px solid transparent;
+      background: transparent; }
+      #mainNav .navbar-brand {
+        padding: 15px 20px;
+        color: white; }
+        #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+          color: rgba(255, 255, 255, 0.8); }
+      #mainNav .navbar-nav > li.nav-item > a {
+        padding: 15px 20px;
+        color: white; }
+        #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
+          color: rgba(255, 255, 255, 0.8); } }
+  @media only screen and (min-width: 1170px) {
+    #mainNav {
+      -webkit-transition: background-color 0.2s;
+      -moz-transition: background-color 0.2s;
+      transition: background-color 0.2s;
+      /* Force Hardware Acceleration in WebKit */
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      -o-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      -webkit-backface-visibility: hidden; }
+      #mainNav.is-fixed {
+        /* when the user scrolls down, we hide the header right above the viewport */
+        position: fixed;
+        top: -77px;
+        -webkit-transition: -webkit-transform 0.2s;
+        -moz-transition: -moz-transform 0.2s;
+        transition: transform 0.2s;
+        border-bottom: 1px solid white;
+        background-color: rgba(255, 255, 255, 0.9); }
+        #mainNav.is-fixed .navbar-brand {
+          color: #333333; }
+          #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
+            color: #0085A1; }
+        #mainNav.is-fixed .navbar-nav > li.nav-item > a {
+          color: #333333; }
+          #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus, #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
+            color: #0085A1; }
+      #mainNav.is-visible {
+        /* if the user changes the scrolling direction, we show the header */
+        -webkit-transform: translate3d(0, 100%, 0);
+        -moz-transform: translate3d(0, 100%, 0);
+        -ms-transform: translate3d(0, 100%, 0);
+        -o-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0); } }
+
+header.masthead {
+  margin-bottom: 50px;
+  background: no-repeat center center;
+  background-color: #777777;
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  header.masthead .page-heading,
+  header.masthead .site-heading {
+    padding: 200px 0 150px;
+    color: white; }
+    @media only screen and (min-width: 768px) {
+      header.masthead .page-heading,
+      header.masthead .site-heading {
+        padding: 200px 0; } }
+  header.masthead .page-heading,
+  header.masthead .site-heading {
+    text-align: center; }
+    header.masthead .page-heading h1,
+    header.masthead .site-heading h1 {
+      font-size: 50px;
+      margin-top: 0; }
+    header.masthead .page-heading .subheading,
+    header.masthead .site-heading .subheading {
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 1.1;
+      display: block;
+      margin: 10px 0 0;
+      font-family: 'Averia Sans Libre', 'Open Sans'}
+
+    header.masthead .site-heading .b #survey-btn {
+      border-radius: 5px;
+      box-shadow: 0 2px gray;
+
+    }
+
+    header.masthead .site-heading .b #survey-btn:hover {
+      background-color: darkgray;
+        cursor: pointer;       
+    }
+
+    header.masthead .site-heading .b #survey-btn:active {
+      transform: translateY(4px);
+    }
+
+
+
+    @media only screen and (min-width: 768px) {
+      header.masthead .page-heading h1,
+      header.masthead .site-heading h1 {
+        font-size: 80px; } }
+
+
+form .form-group {
+  border-top: 1px solid #eeeeee; }
+
+
+
+
+footer {
+  margin-bottom: 20px; }
+  footer .list-inline {
+    margin: 0;
+    padding: 0; }
+  footer .copyright {
+    font-size: 14px;
+    margin-bottom: 0;
+    text-align: center; }
+
+.btn {
+  font-size: 14px;
+  font-weight: 800;
+  padding: 15px 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  box-shadow: 1px 2px gray;
+  font-family: 'Averia Sans Libre', 'Open Sans' }
+
+.btn:hover {
+        background-color: darkgray;
+        cursor: pointer; 
+}
+
+.btn:active {
+  transform: translateY(2px);
+}
+
+.fa {
+
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-github {
+  background: #24292e;
+  color: white;
+}
+
+#userPhoto {
+    height: 100%;
+    width: 100%;
+  }
